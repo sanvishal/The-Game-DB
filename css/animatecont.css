@@ -1,0 +1,26 @@
+.animate-card {
+    -webkit-animation: fadeInUp 500ms ease-out both;
+    animation: fadeInUp 500ms ease-out both;
+}
+
+@keyframes fadeInUp {
+    from {
+        top: 40px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        top: -10px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}

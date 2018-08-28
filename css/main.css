@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+* {
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+body {
+    padding: 0px;
+    margin: 0;
+    background: #F5F5F5;
+}
+
+.cards {
+    padding: 10px 10px;
+}
+
+.canvas {
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.progress {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    font-family: 'Varela Round', sans-serif;
+    color: #333745 !important;
+}
+
+.card {
+    opacity: 0;
+}
+
+.extra {
+    background-color: #3F51B5;
+    font-size: 30px;
+}
+
+.extra>span {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.meta {
+    font-weight: 900 !important;
+    font-size: 15px !important;
+}
+
+.text,
+.item {
+    font-weight: 900 !important;
+    font-size: 15px !important;
+}
+
+.gap {
+    padding: 3px;
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+.pagination {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    height: auto;
+}
+
+.fa-search {
+    margin: auto;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1) !important;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+.card::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.30, 1.30);
+    transform: scale(1.30, 1.30) !important;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+.curr-info {
+    text-align: center !important;
+    font-size: 30px !important;
+}

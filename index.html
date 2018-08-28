@@ -1,0 +1,106 @@
+<!--
+    MADE BY TK VISHAL FOR
+    HACKBENCHERS #1 HACKATHON
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>The Game DB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet prefetch">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/radial.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script src="js/semantic.min.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animatecont.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+</head>
+
+<body>
+    <div class="banner">
+        <h1>GAMES ARENA</h1>
+        <h6>Open Games Database</h6>
+    </div>
+    <div id="main">
+        <br>
+        <div class="ui center aligned container">
+            <div class="ui menu compact">
+                <div class="ui action left icon input">
+                    <input class="search-list" placeholder="Search games..." type="text">
+                    <div class="ui teal button">
+                        <i class="fas fa-search"></i> Search
+                    </div>
+                </div>
+                <div class="ui floating dropdown labeled icon item">
+                    <span class="text filter">Filter by</span>
+                    <span class="gap"> </span>
+                    <i class="fas fa-caret-down"></i>
+                    <div class="menu">
+                        <div class="ui icon search input">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search Genre/Platform...">
+                        </div>
+                        <div class="divider"></div>
+                        <div class="scrolling menu genre-list">
+                            <div class="header">
+                                Genre<span class="gap"> </span><i class="fas fa-gamepad"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="ui primary button" onclick="userList.filter()">
+                        <i class="fas fa-times-circle"></i><span class="gap"> </span>No Filter
+                </button>
+                <div class="ui pointing dropdown link item">
+                    <span class="text filter">Sort by</span>
+                    <span class="gap"> </span>
+                    <i class="fas fa-caret-down"></i>
+                    <div class="menu">
+                        <div class="item">
+                            Release Date<i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item sort" data-sort="year">Up</div>
+                                <div class="item sort" data-sort="year">Down</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            Alphabetically<i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item sort" data-sort="name">Up</div>
+                                <div class="item sort" data-sort="name">Down</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            Score<i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item sort" data-sort="score">Up</div>
+                                <div class="item sort" data-sort="score">Down</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="table">
+            <ul class="ui pagination menu"></ul>
+        </div>
+        <br><br>
+        <div id="grid" class="ui link cards centered list">
+        </div>
+    </div>
+    <!--<button id="add-to-list" class="button button-3d button-caution">Fetch game</button>-->
+    <script src="js/list.js"></script>
+    <script src="js/requests.js"></script>
+    <script src="js/imagegen.js"></script>
+</body>
+
+</html>
